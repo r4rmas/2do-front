@@ -2,9 +2,8 @@ export default function Screen({ children }: { children: JSX.Element | JSX.Eleme
   return (
     <main className="
       flex
-      flex-col
       w-full
-      h-screen
+      h-full
       justify-center
       items-center
       relative

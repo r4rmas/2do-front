@@ -3,7 +3,7 @@ export default function Login() {
     <button className="
       btn 
       btn-primary
-      mt-4
+      mt-6
     ">
       LOGIN
     </button>

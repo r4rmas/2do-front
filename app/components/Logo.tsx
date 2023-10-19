@@ -4,9 +4,6 @@ export default function Logo() {
       font-bold
       text-2xl
     ">
-      <span className="text-xl">
-        ✅
-      </span>
       <span className="
       text-gray-600
         ml-1

@@ -4,6 +4,7 @@ import { useState } from "react";
 import Logo from "../components/Logo";
 import NavButton from "../components/NavButton";
 import Screen from "../components/Screen";
+import SecretInput from "../components/SecretInput";
 
 export default function StartLayout({ children }: { children: JSX.Element[] }) {
   const [email, setEmail] = useState("")
@@ -11,14 +12,12 @@ export default function StartLayout({ children }: { children: JSX.Element[] }) {
 
   return (
     <Screen>
-      <Logo />
       <div>
         <div className="
           flex
           bg-base-300
           rounded-t-md
           w-full
-          mt-6
         ">
           <NavButton 
             goTo="/login"
@@ -56,12 +55,9 @@ export default function StartLayout({ children }: { children: JSX.Element[] }) {
           <label className="label">
             Password:
           </label>
-          <input 
-            value={password}
-            onChange={({ target }) => setPassword(target.value)}
-            type="password" 
-            className="input"
-            required
+          <SecretInput
+            content={password}
+            setContent={setPassword}
           />
           {children}
         </div>

@@ -1,5 +1,6 @@
 'use client'
 
+import SecretInput from "@/app/components/SecretInput"
 import { useState } from "react"
 
 export default function Register() {
@@ -10,16 +11,14 @@ export default function Register() {
       <label className="label">
         Confirm password:
       </label>
-      <input
-        value={passConf}
-        onChange={({ target }) => setPassConf(target.value)}
-        type="password"
-        className="input"
+      <SecretInput
+        content={passConf}
+        setContent={setPassConf}
       />
       <button className="
         btn
         btn-primary
-        mt-4
+        mt-6
       ">
         REGISTER
       </button>
